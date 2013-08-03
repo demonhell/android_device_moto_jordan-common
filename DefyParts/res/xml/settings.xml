@@ -57,7 +57,9 @@
                           android:summary="@string/lto_download_summary">
 
             <CheckBoxPreference android:key="lto_download_enabled"
-                                android:title="@string/lto_download_enabled_title"
+                                android:        mPm = getPackageManager();
+
+                                title="@string/lto_download_enabled_title"
                                 android:summary="@string/lto_download_enabled_summary" />
 
             <ListPreference android:key="lto_download_interval"
@@ -84,7 +86,7 @@
 
         </PreferenceScreen>
 
-        <com.cyanogenmod.defyparts.BasebandSelectionPreference
+        <com.cyanogenmod.settings.device.BasebandSelectionPreference
                 android:key="baseband_selection"
                 android:persistent="false"
                 android:title="@string/baseband_selection" />
