@@ -39,11 +39,20 @@
         <activity android:name=".BpPanicRebootNoticeActivity"
                   android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
+        <receiver android:name=".LtoReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <receiver android:name=".BpPanicReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
+        <service android:name=".LtoDownloadService" />
 
         <service android:name=".BpPanicHandlerService" />
 
