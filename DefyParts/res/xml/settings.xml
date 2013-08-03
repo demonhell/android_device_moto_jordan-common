@@ -57,9 +57,7 @@
                           android:summary="@string/lto_download_summary">
 
             <CheckBoxPreference android:key="lto_download_enabled"
-                                android:        mPm = getPackageManager();
-
-                                title="@string/lto_download_enabled_title"
+                                android:title="@string/lto_download_enabled_title"
                                 android:summary="@string/lto_download_enabled_summary" />
 
             <ListPreference android:key="lto_download_interval"
